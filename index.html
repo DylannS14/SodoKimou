@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Réseaux</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 15px;
+      max-width: 400px;
+      margin: 20px auto;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      height: 120px;
+    }
+    .social-links {
+      margin-top: 20px;
+      font-size: 2em;
+    }
+    .social-links a {
+      color: #f39c12;
+      margin: 0 15px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .social-links a:hover {
+      color: #e67e22;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="gallery">
+    <img src="URL_PHOTO_1.jpg" alt="photo 1">
+    <img src="URL_PHOTO_2.jpg" alt="photo 2">
+    <img src="URL_PHOTO_3.jpg" alt="photo 3">
+    <img src="URL_PHOTO_3.jpg" alt="photo 4">
+  </div>
+
+  <div class="social-links">
+    <a href="https://https://www.instagram.com/loissaudrais/" target="_blank" aria-label="Instagram">📸</a>
+    <a href="https://www.snapchat.com/add/l_saudrais" target="_blank" aria-label="Snapchat">👻</a>
+  </div>
+
+</body>
+</html>
