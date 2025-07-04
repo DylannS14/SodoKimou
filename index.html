@@ -2,66 +2,68 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Réseaux</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SodoKimou</title>
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      background: #111;
-      color: #fff;
+      background-color: #121212;
+      color: white;
       font-family: Arial, sans-serif;
       text-align: center;
+      padding: 20px;
+    }
+
+    .gallery {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap: 15px;
-      max-width: 400px;
-      margin: 20px auto;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 10px;
-      object-fit: cover;
-      height: 120px;
-    }
-    .social-links {
+      gap: 20px;
       margin-top: 20px;
-      font-size: 2em;
     }
-    .social-links a {
-      color: #f39c12;
-      margin: 0 15px;
+
+    .gallery img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 10px auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+
+    a {
+      color: #1DA1F2;
       text-decoration: none;
-      transition: color 0.3s ease;
+      font-weight: bold;
+      display: inline-block;
+      margin: 10px;
     }
-    .social-links a:hover {
-      color: #e67e22;
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .phrase {
+      font-size: 1.5em;
+      color: #f39c12;
+      margin-bottom: 30px;
     }
   </style>
 </head>
 <body>
 
-  <p style="font-size: 1.4em; color: #f39c12; margin: 20px 0;">
-    Je cherche une (des) femme(s) svp...
-  </p>
+  <p class="phrase">Je cherche une (des) femme(s) svp...</p>
 
   <div class="gallery">
     <img src="IMG_2101.jpg" alt="photo 1">
-  
+    <!-- Tu peux décommenter et remplacer ces lignes quand tu auras uploadé les autres images -->
+    <!-- <img src="IMG_2102.jpg" alt="photo 2"> -->
+    <!-- <img src="IMG_2103.jpg" alt="photo 3"> -->
+    <!-- <img src="IMG_2104.jpg" alt="photo 4"> -->
   </div>
 
-  <div class="social-links">
-    <a href="https://www.instagram.com/loissaudrais/" target="_blank" aria-label="Instagram">📸</a>
-    <a href="https://www.snapchat.com/add/l_saudrais" target="_blank" aria-label="Snapchat">👻</a>
+  <div>
+    <a href="https://www.instagram.com/dylannbeckham14/" target="_blank">Instagram</a>
+    <a href="https://www.snapchat.com/add/dylannbeckham14" target="_blank">Snapchat</a>
   </div>
 
 </body>
 </html>
-
