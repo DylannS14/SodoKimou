@@ -13,6 +13,28 @@
       padding: 20px;
     }
 
+    .phrase {
+      font-size: 1.5em;
+      color: #f39c12;
+      margin-bottom: 20px;
+    }
+
+    .socials {
+      margin-bottom: 30px;
+    }
+
+    .socials a {
+      color: #1DA1F2;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    .socials a:hover {
+      text-decoration: underline;
+    }
+
     .gallery {
       display: flex;
       flex-direction: column;
@@ -20,7 +42,8 @@
       margin-top: 20px;
     }
 
-    .gallery img {
+    .gallery img,
+    .gallery video {
       max-width: 100%;
       height: auto;
       display: block;
@@ -28,44 +51,29 @@
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.3);
     }
-
-    a {
-      color: #1DA1F2;
-      text-decoration: none;
-      font-weight: bold;
-      display: inline-block;
-      margin: 10px;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .phrase {
-      font-size: 1.5em;
-      color: #f39c12;
-      margin-bottom: 30px;
-    }
   </style>
 </head>
 <body>
 
   <p class="phrase">Je cherche une (des) femme(s) svp...</p>
 
-  <div class="gallery">
-  <video autoplay muted loop playsinline 
-    style="max-width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
-    <source src="Lois.mp4" type="video/mp4">
-    Ton navigateur ne supporte pas la lecture vidéo.
-  </video>
-</div>
- 
-  </div>
-
-  <div>
+  <div class="socials">
     <a href="https://www.instagram.com/loissaudrais/" target="_blank">Instagram</a>
     <a href="https://www.snapchat.com/add/loissaudrais" target="_blank">Snapchat</a>
   </div>
 
+  <div class="gallery">
+    <!-- Vidéo -->
+    <video autoplay muted loop playsinline>
+      <source src="Lois.mp4" type="video/mp4">
+      Ton navigateur ne supporte pas la lecture vidéo.
+    </video>
+
+    <!-- Photos à ajouter ici -->
+    <img src="IMG_2101.jpg" alt="photo 2">
+    <!-- Ajoute autant de lignes que nécessaire -->
+  </div>
+
 </body>
 </html>
+
